@@ -1,0 +1,10 @@
+/* BACKGROUND */
+.backdrop {
+	background: #333333;
+	filter: alpha(opacity=50);
+	opacity: .4;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+.background {
+	background-image: url('../image/desktop.jpg');
+}
