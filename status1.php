@@ -591,7 +591,7 @@ $jsonTable10 = json_encode($table11);
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Network Monitoring System | PT Indonesia Comnets Plus</title>
+  <title>Network Monitoring System</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <link href="css/sb-admin.css" rel="stylesheet">
@@ -744,7 +744,6 @@ $jsonTable10 = json_encode($table11);
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <p>Copyright © </p>
-            <a href="http://www.iconpln.co.id"><span>PT Indonesia Comnets Plus</span></a>
           </div>
         </div>
       </footer>
