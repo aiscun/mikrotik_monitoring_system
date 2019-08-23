@@ -19,7 +19,7 @@ $events = query("SELECT event.*, customer.customer_name, customer.customer_addre
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Network Monitoring System | PT Indonesia Comnets Plus</title>
+  <title>Network Monitoring System</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -296,7 +296,6 @@ $events = query("SELECT event.*, customer.customer_name, customer.customer_addre
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
           	<p>Copyright © </p>
-            <a href="http://www.iconpln.co.id"><span>PT Indonesia Comnets Plus</span></a>
           </div>
         </div>
       </footer>
