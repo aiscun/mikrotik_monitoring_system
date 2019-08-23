@@ -1,7 +1,7 @@
 <?php 
 
 // koneksi ke database
-$conn = mysqli_connect("localhost","root","","iconbisa");
+$conn = mysqli_connect("localhost","root","","namadb");
 
 // function query
 function query($query){
