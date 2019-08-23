@@ -23,7 +23,7 @@ $customers = query("SELECT * FROM customer");
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Network Monitoring System | PT Indonesia Comnets Plus</title>
+  <title>Network Monitoring System</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
