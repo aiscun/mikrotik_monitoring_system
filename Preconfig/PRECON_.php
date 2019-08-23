@@ -71,10 +71,10 @@ Configuration Mikrotik to Web API
 
 /tool flood-ping 8.8.8.8 count=10 do={:if (\$sent = 10) do={:set maxRtt \$\"avg-rtt\"; :set Received \$\"received\";}};<br>
 /tool flood-ping $ip_gateway count=10 do={:if (\$sent = 10) do={:set maxRtt2 \$\"avg-rtt\"; :set Received2 \$\"received\";}};<br>
-/tool flood-ping 220.247.170.123 count=10 do={:if (\$sent = 10) do={:set maxRtt3 \$\"avg-rtt\"; :set Received3 \$\"received\";}};<br>
+/tool flood-ping ip server count=10 do={:if (\$sent = 10) do={:set maxRtt3 \$\"avg-rtt\"; :set Received3 \$\"received\";}};<br>
 
 <br>
-/tool fetch url=\"http://220.247.170.123/MonitoringMikrotik/eventapik.php?customer_id=$customer_id&pop_id=$pop_id&device_id=$device_id&date1=\$systemDate&time1=\$systemTime&amp;parameter1=\$Temp&amp;parameter2=\$Volt.\$Volt3&amp;parameter3=\$jmlhot&amp;parameter4=\$ippool&amp;parameter5=\$ipdhcp&p6receive=\$Received&p7receive=\$Received2&p6avg=\$maxRtt&p6sent=10&p7avg=\$maxRtt2&p7sent=10&p8receive=\$Received3&p8sent=10&p8avg=\$maxRtt3&pcpuL=\$pcpuL&pcpuF=\$pcpuF&pmT=\$pmT&pmF=\$pmF&uptime=\$uptime&submit=\"<br>
+/tool fetch url=\"http://eventapik.php?customer_id=$customer_id&pop_id=$pop_id&device_id=$device_id&date1=\$systemDate&time1=\$systemTime&amp;parameter1=\$Temp&amp;parameter2=\$Volt.\$Volt3&amp;parameter3=\$jmlhot&amp;parameter4=\$ippool&amp;parameter5=\$ipdhcp&p6receive=\$Received&p7receive=\$Received2&p6avg=\$maxRtt&p6sent=10&p7avg=\$maxRtt2&p7sent=10&p8receive=\$Received3&p8sent=10&p8avg=\$maxRtt3&pcpuL=\$pcpuL&pcpuF=\$pcpuF&pmT=\$pmT&pmF=\$pmF&uptime=\$uptime&submit=\"<br>
 <br>
 =================================================<br>
 <br>
@@ -108,7 +108,7 @@ Configuration Mikrotik to Telegram API
 <br>
 /tool flood-ping 8.8.8.8 count=10 do={:if (\$sent = 10) do={:set maxRtt \$\"avg-rtt\"; :set Received \$\"received\";}};<br>
 /tool flood-ping $ip_gateway count=10 do={:if (\$sent = 10) do={:set maxRtt2 \$\"avg-rtt\"; :set Received2 \$\"received\";}};<br>
-/tool flood-ping 220.247.170.123 count=10 do={:if (\$sent = 10) do={:set maxRtt3 \$\"avg-rtt\"; :set Received3 \$\"received\";}};<br>
+/tool flood-ping ip server count=10 do={:if (\$sent = 10) do={:set maxRtt3 \$\"avg-rtt\"; :set Received3 \$\"received\";}};<br>
 <br>
 :local kirim \"Customer Name : $name %0A\<br>
 Service : Internet%0A\<br>
@@ -128,7 +128,7 @@ avgRtt : \$maxRtt2 ms, sent : 10, received : \$Received2%0A\<br>
 avgRtt : \$maxRtt3 ms, sent : 10, received : \$Received3\"; <br>
 
 <br>
-/tool fetch url=\"https://api.telegram.org/bot883384624:AAFSpHgrscZRp6v6TmeUDrWpat9jCIToT5U/sendMessage?chat_id=-335967031&text=\$kirim\";
+/tool fetch url=\"https://api.telegram.org/tokenbot/sendMessage?chat_id=&text=\$kirim\";
 
 ";
         $hasil_Zyxel .= "$str";
